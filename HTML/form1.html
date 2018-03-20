@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+</head>
+<body>
+<form action="index.php" method="post">
+    <input type="text" name="name" placeholder="Enter your name"/><br/>
+    <input type="text" name="email" placeholder="Enter your email"/><br/> <!-- admin@example.com -->
+    <input type="text" name="phone" placeholder="Enter your phone"/>
+    <input type="submit"/>
+
+</form>
+<?php
+    print_r($_POST);
+
+?>
+
+    <!--// output
+    // Array ( [email] => admin@example.com )-->
+
+</body>
+</html>

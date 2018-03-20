@@ -1,0 +1,69 @@
+* {
+    font-family: Tahoma;
+}
+
+.link {
+    color: #FF0000;
+}
+
+div.sidebar {
+    background: #FF0000;
+    margin: 50px;
+}
+
+/*.bar1 {
+    background: #baeeff;
+}*/
+
+.bar b {
+    color: #FF3399
+}
+
+.bar1:hover {
+    color: green;
+}
+
+h1 {
+    font-weight: bold;
+}
+h2 {
+    font-style: italic;
+}
+h3 {
+    text-decoration: underline;
+}
+
+/*Задать в container правила фиксированной ширины 1000px, выравнивания блока по центру экрана и внутренние отступы
+величиной 1px. Для header, footer, navigation задать внешние отступы равные 20px и внутренние отступы равные 10px.
+Для content задать внутренние отступы равные 20px; Для header задать высоту блока 50px, выравнивание текста по правому
+краю и форматировку текста курсивом. Для footer задать высоту блока равную 40px и выравнивание текста по центру.*/
+
+.container {
+    padding: 1px;
+    width:1000px;
+    margin: auto;
+}
+
+.header {
+    padding: 10px;
+    margin: 20px;
+    height: 50px;
+    text-align: right;
+    font-style: italic;
+}
+
+.navigator {
+    padding: 10px;
+    margin: 20px;
+}
+
+.content {
+    padding: 20px;
+}
+
+.footer {
+    padding: 10px;
+    margin: 20px;
+    height: 40px;
+    text-align: center;
+}

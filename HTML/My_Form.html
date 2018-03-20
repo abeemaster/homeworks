@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Form</title>
+</head>
+<body>
+
+<h1>My Form</h1>
+
+<form action="index.php" method="post">
+
+    <table border="1">
+        <tr>
+            <td><lable for="login">Name:</lable></td>
+            <td align="center"><input type="text" name="login" id="login" placeholder="Enter your name" /></td>
+        </tr>
+        <tr>
+            <td><label for="email">Email:</label></td>
+            <td align="center"><input type="email" name="email" id="email" placeholder="Enter your email" /></td>
+        </tr>
+        <tr>
+            <td><label for="phone">Phone:</label></td>
+            <td align="center"><input type="phone" name="phone" id="phone" placeholder="Enter your phone" /> </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <form>
+                    Application For: <br>
+                Sports <input type='checkbox' name='subscribe_sport'> <br>
+                Business <input type='checkbox' name='subscribe_business'> <br>
+                Cooking <input type='checkbox' name='subscribe_cooking'>
+            </form>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <form>
+                Select your gender:<br>
+                Men <input type='radio' name='gender' value='men' > <br>
+                Women <input type='radio' name='gender' value='women'>
+            </form>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <form>
+                    Select your country:<br>
+                    <select name="country">
+                        <option value="uk">Ukraine</option>
+                        <option value="us">USA</option>
+                        <option value="pl">Poland</option>
+                    </select>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2"><label for="message">Message:</label>
+            <input type="message" name="message" id="message" placeholder="Enter your message" /></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <form method="post" enctype="multipart/form-data">
+                    <input type="file" name="resume">
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <form>
+                    <input type="hidden" name="date" value="date">
+                    <input type="submit" value="Send"/>
+                </form>
+            </td>
+        </tr>
+
+    </table>
+
+   </form>
+<?php
+print_r($_POST);
+?>
+
+</body>
+</html>
