@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Script test</title>
+</head>
+<body>
+
+<div align='center'>This is a test page with JS</div>
+
+<!--//Составить алгоритм для вычисления значения площади прямоугольника со сторонами a, b.
+// Увеличить полученное значение на 1.
+// Проверить значения при помощи функции alert (var).-->
+
+<!--<script>-->
+    <!--var a = 15;-->
+    <!--var b = 17;-->
+    <!--y = a * b;-->
+    <!--y++;-->
+    <!--alert(y);-->
+    <!--console.log(y);-->
+<!--</script>-->
+
+
+<!--// 1) true && false || true;
+// 2) true || false && true;
+// 3) false && (!false || true);
+// 4) (1 > 0) && (1 < 0).
+// Результаты записать в отдельные переменные и вывести их значение при помощи функции alert (var).-->
+
+<!--<script>-->
+    <!--var a = true && false || true;-->
+    <!--var b = true || false && true;-->
+    <!--var c = false && (!false || true);-->
+    <!--var d = (1 > 0) && (1 < 0);-->
+    <!--alert(a);-->
+    <!--alert(b);-->
+    <!--alert(c);-->
+    <!--alert(d);-->
+    <!--console.log(a,b,c,d);-->
+<!--</script>-->
+
+<!--Объявить переменную a с целым числовым значением. -->
+<!--Объявить еще одну переменную b. -->
+<!--В нее записать булевское выражение, которое будет равно true если значение переменной a -->
+<!--делится на 2 и false в противном случае. -->
+<!--Результат проверить при помощи функции alert ().-->
+
+<!--<script>
+    var a = 10;
+    var c = a % 2;
+
+     var b = c == 1 || false;
+     var b = c == 0 || true;
+    alert(b);
+
+</script>-->
+
+<!--++Записать в переменную myString значение "Hello, task! ". -->
+<!--++Используя конкатенацию и эту переменную, получить строку "Hello, task! Hello, task! Hello, task!". -->
+<!--++Записать в отдельную переменную первый символ этой строки. -->
+<!--++Проверить значения при помощи функции alert (var)-->
+
+<!--<script>-->
+    <!--var myString = "Hello, task!";-->
+    <!--var myString2 = myString + myString + myString;-->
+    <!--var c = myString[2];-->
+    <!--alert(myString2);-->
+    <!--alert(c);-->
+<!--</script>-->
+
+
+<!--++Создать массив из трех любых числовых значений. В отдельные переменные записать: -->
+<!--++1) сумму всех значений элементов массива; -->
+<!--++2) логическое выражение, которое дает true лишь если каждое следующее значение массива больше предыдущего.-->
+
+<!--<script>-->
+    <!--var arr = [3, 5, 7];-->
+    <!--var sum = arr[0]+arr[1]+arr[2];-->
+    <!--var sravn = arr[0]<arr[1]<arr[2];-->
+    <!--alert(sravn);-->
+    <!--alert(sum);-->
+<!--</script>-->
+
+<!--Создать объект apple со свойствами weight (вес - число) и color (цвет - строка). -->
+<!--Задать значения свойств как 15.4 и "red". -->
+<!--Создать объект banana с такими же свойствами и задать для них значения 3.78 и "yellow". -->
+<!--В отдельную переменную записать суммарное значение веса яблока и банана. -->
+<!--Используя доступ к свойствам объекта и конкатенацию, сформировать переменную "red and yellow".-->
+
+<!--<script>-->
+<!--var apple = {weight: 15, color: "red"};-->
+<!--var banana = {weight: 3.78, color: "yellow"};-->
+<!--var mass = apple.weight + banana.weight;-->
+<!--// var color = apple.color + banana.color;-->
+<!--var c1 = apple.color;-->
+<!--var c2 = banana.color;-->
+<!--var color = c1 + 'and' + c2;-->
+<!--alert(mass);-->
+<!--alert(color);-->
+<!--</script>-->
+
+<!--Для объекта apple  реализовать методы getWeight() (возвращает текущее значение веса) и
+setWeight(weight) (задает новое значение для веса).
+При помощи функции prompt() задать новое значение веса для объекта яблоко.
+Вывести новое значение в консоль.-->
+
+<script>
+    var newWeight = "newWeight";
+    var a = prompt(newWeight);
+    var apple = {
+
+        weight: 15,
+        color: 'red',
+
+        getWeight: function () {
+            alert(this.weight);
+        },
+        setWeight: function (newWeight) {
+            this.weight = newWeight;
+            console.log("newWeight" + a);
+        }
+    };
+
+
+    apple.getWeight();
+    apple.setWeight(newWeight);
+    apple.getWeight();
+
+</script>
+
+</body>
+</html>
+
